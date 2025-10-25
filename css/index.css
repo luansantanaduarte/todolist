@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+:root {
+  --azul-claro-light-mode: #007FFF;
+  --azul-escuro-ligt-mode: #392B58;
+  --branco-light-mode: #FFFBFA;
+  --texto-inativo-light-mode: #8AC4FF;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
+  min-height: 110vh
+}
+
+.cabecalho {
+  display: flex;
+  background-color: #007FFF;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.cabecalho-separador {
+  flex: 1;
+}
+
+.cabecalho-titulo {
+  flex: 1;
+  color: white;
+  text-decoration: none;
+  width: 5vw;
+  white-space: nowrap;
+}
+
+.cabecalhho-nav {
+  flex: 1;
+  margin-left: auto;
+}
+
+.cabecalho-nav__link {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.cabecalho-nav__link:hover {
+  text-decoration: underline;
+}
+
+.principal {
+  width: 100%;
+  flex: 1;
+}
+
+.task {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.task-titulo {
+  border: 1.5px solid var(--azul-claro-light-mode);
+  width: 50%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  border-radius: 5px;
+  color: var(--texto-inativo-light-mode);
+}
+
+.material-symbols-outlined {
+  border: 1px solid transparent;
+  color: var(--branco-light-mode);
+  border-radius: 5px;
+  margin-left: 10px;
+  padding: 5px;
+  background-color: var(--azul-claro-light-mode);
+  cursor: pointer;
+}
+
+.material-symbols-outlined:hover {
+  opacity: 0.8;
+}
+
+.rodape {
+  background-color: var(--azul-claro-light-mode);
+}
+
+.rodape-copyright p {
+  color: white;
+  text-align: left;
+  margin: 50px;
+}
+
+.rodape-secoes {
+  margin: 50px;
+  display: flex;
+  gap: 50px;
+}
+
+.rodape-secoes h4 {
+  color: white;
+}
+
+.rodape-secoes ul {
+  list-style: none;
+}
+
+.rodape-secoes__item a {
+  text-decoration: none;
+  color: white;
+}
+
+.rodape-secoes__item {
+  color: white;
+  font-size: 15px;
+}
+ 
+.rodape-secoes__item:hover {
+  opacity: 0.8;
+}
