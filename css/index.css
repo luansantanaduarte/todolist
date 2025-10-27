@@ -128,3 +128,9 @@ body {
 .rodape-secoes__item:hover {
   opacity: 0.8;
 }
+
+.rodape-contato__rede {
+  width: 20%;
+  margin-top: 10px;
+  margin-left: 2px;
+}
