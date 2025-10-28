@@ -5,7 +5,11 @@
   --azul-escuro-ligt-mode: #392B58;
   --branco-light-mode: #FFFBFA;
   --texto-inativo-light-mode: #8AC4FF;
+
+  --fundo-dark-mode: #0D3B66;
+  --preto-dark-mode: #323232;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -29,9 +33,6 @@ body {
   padding: 20px;
 }
 
-.cabecalho-separador {
-  flex: 1;
-}
 
 .cabecalho-titulo {
   flex: 1;
@@ -39,11 +40,8 @@ body {
   text-decoration: none;
   width: 5vw;
   white-space: nowrap;
-}
-
-.cabecalhho-nav {
-  flex: 1;
-  margin-left: auto;
+  text-align: center;
+  user-select: none;
 }
 
 .cabecalho-nav__link {
@@ -54,6 +52,15 @@ body {
 
 .cabecalho-nav__link:hover {
   text-decoration: underline;
+}
+
+span.btn-light-mode {
+  display: none;
+  user-select: none;
+}
+
+span.btn-dark-mode {
+  user-select: none;
 }
 
 .principal {
@@ -77,14 +84,19 @@ body {
   color: var(--texto-inativo-light-mode);
 }
 
+.task-titulo:focus {
+  outline: none;
+}
+
 .material-symbols-outlined {
   border: 1px solid transparent;
   color: var(--branco-light-mode);
   border-radius: 5px;
   margin-left: 10px;
   padding: 5px;
-  background-color: var(--azul-claro-light-mode);
   cursor: pointer;
+  background-color: var(--azul-claro-light-mode);
+  user-select: none;
 }
 
 .material-symbols-outlined:hover {
@@ -94,6 +106,7 @@ body {
 .rodape {
   background-color: var(--azul-claro-light-mode);
 }
+
 
 .rodape-copyright p {
   color: white;
@@ -123,8 +136,9 @@ body {
 .rodape-secoes__item {
   color: white;
   font-size: 15px;
+  user-select: none;
 }
- 
+
 .rodape-secoes__item:hover {
   opacity: 0.8;
 }
@@ -133,4 +147,33 @@ body {
   width: 20%;
   margin-top: 10px;
   margin-left: 2px;
+}
+
+
+span.btn-light-mode,
+span.btn-dark-mode {
+  background-color: transparent;
+}
+
+/* dark mode */
+.cabecalho-dark-mode {
+  background-color: var(--fundo-dark-mode);
+}
+
+
+.principal-dark-mode{
+  background-color: var(--preto-dark-mode);
+}
+
+.task-titulo-dark-mode {
+  color: var(--branco-light-mode);
+  border: 1.5px solid var(--branco-light-mode);
+}
+
+.btn-add-dark-mode {
+  background-color: transparent;
+}
+
+.rodape-dark-mode {
+  background-color: var(--fundo-dark-mode);
 }
