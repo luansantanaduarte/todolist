@@ -18,6 +18,12 @@ function TrocarDarkMode() {
 
     const rodape = document.querySelector(".rodape");
     rodape.classList.add("rodape-dark-mode");
+
+    const divisoria = document.querySelector(".task-divisoria");
+    divisoria.classList.add("task-divisoria-dark-mode");
+
+    const detalhes = document.querySelector(".task-detalhes");
+    detalhes.classList.add("task-detalhes-dark-mode");
 }
 
 function TrocarLightMode() {
@@ -40,9 +46,19 @@ function TrocarLightMode() {
 
     const rodape = document.querySelector(".rodape");
     rodape.classList.remove("rodape-dark-mode");
+
+    const divisoria = document.querySelector(".task-divisoria");
+    divisoria.classList.remove("task-divisoria-dark-mode");
+
+    const detalhes = document.querySelector(".task-detalhes");
+    detalhes.classList.remove("task-detalhes-dark-mode");
 }
 
 function escreverTask() {
     const titulo = document.querySelector(".task-titulo");
-    titulo.textContent = ""
+    titulo.textContent = "";
+    const taskDetalhes = document.querySelector(".task-detalhes");
+    const taskDivisoria = document.querySelector(".task-divisoria");
+    taskDetalhes.style.display = "block";
+    taskDivisoria.style.display = "block";
 }

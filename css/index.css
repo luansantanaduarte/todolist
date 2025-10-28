@@ -68,20 +68,42 @@ span.btn-dark-mode {
   flex: 1;
 }
 
-.task {
-  display: flex;
-  justify-content: center;
-  padding-top: 50px;
-}
-
-.task-titulo {
+.task-prompt {
   border: 1.5px solid var(--azul-claro-light-mode);
-  width: 50%;
+  border-radius: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 10px;
-  border-radius: 5px;
+  padding-right: 10px;
+  width: 50%;
+}
+
+.task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.task-titulo,
+.task-detalhes {
   color: var(--texto-inativo-light-mode);
+}
+
+.task-titulo {
+  font-size: 20 px;
+}
+
+.task-detalhes {
+  font-size: 12px;
+  display: none;
+}
+
+.task-divisoria {
+  border-bottom: 1px solid var(--azul-claro-light-mode);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: none;
 }
 
 .task-titulo:focus {
@@ -106,7 +128,6 @@ span.btn-dark-mode {
 .rodape {
   background-color: var(--azul-claro-light-mode);
 }
-
 
 .rodape-copyright p {
   color: white;
@@ -167,7 +188,6 @@ span.btn-dark-mode {
 
 .task-titulo-dark-mode {
   color: var(--branco-light-mode);
-  border: 1.5px solid var(--branco-light-mode);
 }
 
 .btn-add-dark-mode {
@@ -176,4 +196,12 @@ span.btn-dark-mode {
 
 .rodape-dark-mode {
   background-color: var(--fundo-dark-mode);
+}
+
+.task-divisoria-dark-mode {
+  border-bottom: 1px solid var(--branco-light-mode);
+}
+
+.task-detalhes-dark-mode {
+  color: var(--branco-light-mode);
 }
