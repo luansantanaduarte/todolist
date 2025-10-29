@@ -1,56 +1,34 @@
+const botaoDarkMode = document.querySelector(".btn-dark-mode");
+const botaoLightMode = document.querySelector(".btn-light-mode");
+const cabecalho = document.querySelector(".cabecalho");
+const principal = document.querySelector(".principal");
+const task = document.querySelector(".task-titulo");
+const btnAdd = document.getElementById("btn-add");
+const rodape = document.querySelector(".rodape");
+const divisoria = document.querySelector(".task-divisoria");
+const detalhes = document.querySelector(".task-detalhes");
+
 function TrocarDarkMode() {
-    const botaoDarkMode = document.querySelector(".btn-dark-mode");
     botaoDarkMode.style.display = "none";
-    const botaoLightMode = document.querySelector(".btn-light-mode");
     botaoLightMode.style.display = "block";
-
-    const cabecalho = document.querySelector(".cabecalho");
     cabecalho.classList.add("cabecalho-dark-mode");
-
-    const principal = document.querySelector(".principal");
     principal.classList.add("principal-dark-mode");
-
-    const task = document.querySelector(".task-titulo");
     task.classList.add("task-titulo-dark-mode");
-    
-    const btnAdd = document.getElementById("btn-add");
     btnAdd.classList.add("btn-add-dark-mode");
-
-    const rodape = document.querySelector(".rodape");
     rodape.classList.add("rodape-dark-mode");
-
-    const divisoria = document.querySelector(".task-divisoria");
     divisoria.classList.add("task-divisoria-dark-mode");
-
-    const detalhes = document.querySelector(".task-detalhes");
     detalhes.classList.add("task-detalhes-dark-mode");
 }
 
 function TrocarLightMode() {
-    const botaoLightMode = document.querySelector(".btn-light-mode");
     botaoLightMode.style.display = "none";
-    const botaoDarkMode = document.querySelector(".btn-dark-mode");
     botaoDarkMode.style.display = "block";
-
-    const cabecalho = document.querySelector(".cabecalho");
     cabecalho.classList.remove("cabecalho-dark-mode");
-
-    const principal = document.querySelector(".principal");
     principal.classList.remove("principal-dark-mode");
-
-    const task = document.querySelector(".task-titulo");
     task.classList.remove("task-titulo-dark-mode");
-
-    const btnAdd = document.getElementById("btn-add");
     btnAdd.classList.remove("btn-add-dark-mode");
-
-    const rodape = document.querySelector(".rodape");
     rodape.classList.remove("rodape-dark-mode");
-
-    const divisoria = document.querySelector(".task-divisoria");
     divisoria.classList.remove("task-divisoria-dark-mode");
-
-    const detalhes = document.querySelector(".task-detalhes");
     detalhes.classList.remove("task-detalhes-dark-mode");
 }
 
