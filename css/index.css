@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
 
 :root {
-  --azul-claro-light-mode: #007FFF;
-  --azul-escuro-ligt-mode: #392B58;
-  --branco-light-mode: #FFFBFA;
-  --texto-inativo-light-mode: #8AC4FF;
+
+  /* light mode */
+  --azul-principal: #007FFF;
+  --branco-destaque: #FFF;
+  --branco-leve: #EAEAEA;
+  
 
   --fundo-dark-mode: #0D3B66;
   --preto-dark-mode: #323232;
@@ -27,7 +29,7 @@ body {
 
 .cabecalho {
   display: flex;
-  background-color: #007FFF;
+  background-color: var(--azul-principal);
   align-items: center;
   justify-content: space-between;
   padding: 20px;
@@ -69,7 +71,7 @@ span.btn-dark-mode {
 }
 
 .task-prompt {
-  border: 1.5px solid var(--azul-claro-light-mode);
+  border: 1.5px solid var(--azul-principal);
   border-radius: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -87,7 +89,8 @@ span.btn-dark-mode {
 
 .task-titulo,
 .task-detalhes {
-  color: var(--texto-inativo-light-mode);
+  color: var(--azul-principal);
+  opacity: 50%;
 }
 
 .task-titulo {
@@ -100,7 +103,7 @@ span.btn-dark-mode {
 }
 
 .task-divisoria {
-  border-bottom: 1px solid var(--azul-claro-light-mode);
+  border-bottom: 1px solid var(--azul-principal);
   margin-top: 5px;
   margin-bottom: 5px;
   display: none;
@@ -112,21 +115,21 @@ span.btn-dark-mode {
 
 .material-symbols-outlined {
   border: 1px solid transparent;
-  color: var(--branco-light-mode);
+  color: var(--branco-destaque);
   border-radius: 5px;
   margin-left: 10px;
   padding: 5px;
   cursor: pointer;
-  background-color: var(--azul-claro-light-mode);
+  background-color: var(--azul-principal);
   user-select: none;
 }
 
-.material-symbols-outlined:hover {
-  opacity: 0.8;
+#btn-add:hover {
+  background-color: #B3D9FF;
 }
 
 .rodape {
-  background-color: var(--azul-claro-light-mode);
+  background-color: var(--azul-principal);
 }
 
 .rodape-copyright p {
@@ -170,6 +173,9 @@ span.btn-dark-mode {
   margin-left: 2px;
 }
 
+.rodape-contato__rede:hover {
+  opacity: 50%;
+}
 
 span.btn-light-mode,
 span.btn-dark-mode {
