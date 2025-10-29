@@ -38,6 +38,7 @@ function TrocarLightMode() {
 function escreverTask() {
     const titulo = document.querySelector(".task-titulo");
     titulo.textContent = "";
+    titulo.style.opacity = "100%";
     const taskDetalhes = document.querySelector(".task-detalhes");
     const taskDivisoria = document.querySelector(".task-divisoria");
     taskDetalhes.style.display = "block";
