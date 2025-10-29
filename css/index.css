@@ -7,9 +7,9 @@
   --branco-destaque: #FFF;
   --branco-leve: #EAEAEA;
   
-
-  --fundo-dark-mode: #0D3B66;
-  --preto-dark-mode: #323232;
+  /* dark mode */
+  --azul-escuro-principal: #003366;
+  --preto-principal: #0F141A;
 }
 
 * {
@@ -71,7 +71,7 @@ span.btn-dark-mode {
 }
 
 .task-prompt {
-  border: 1.5px solid var(--azul-principal);
+  border: 2.5px solid var(--azul-principal);
   border-radius: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -103,7 +103,7 @@ span.btn-dark-mode {
 }
 
 .task-divisoria {
-  border-bottom: 1px solid var(--azul-principal);
+  border-bottom: 2.5px solid var(--azul-principal);
   margin-top: 5px;
   margin-bottom: 5px;
   display: none;
@@ -125,7 +125,7 @@ span.btn-dark-mode {
 }
 
 #btn-add:hover {
-  background-color: #B3D9FF;
+  opacity: 70%;
 }
 
 .rodape {
@@ -184,30 +184,33 @@ span.btn-dark-mode {
 
 /* dark mode */
 .cabecalho-dark-mode {
-  background-color: var(--fundo-dark-mode);
+  background-color: var(--azul-escuro-principal);
 }
 
-
 .principal-dark-mode{
-  background-color: var(--preto-dark-mode);
+  background-color: var(--preto-principal);
 }
 
 .task-titulo-dark-mode {
-  color: var(--branco-light-mode);
+  color: var(--branco-leve);
 }
 
 .btn-add-dark-mode {
-  background-color: transparent;
+  background-color: var(--azul-escuro-principal);
 }
 
 .rodape-dark-mode {
-  background-color: var(--fundo-dark-mode);
+  background-color: var(--azul-escuro-principal);
 }
 
 .task-divisoria-dark-mode {
-  border-bottom: 1px solid var(--branco-light-mode);
+  border-bottom: 2.5px solid var(--branco-leve);
+}
+
+.task-prompt-dark-mode {
+  border: 2.5px solid var(--branco-leve);
 }
 
 .task-detalhes-dark-mode {
-  color: var(--branco-light-mode);
+  color: var(--branco-leve);
 }

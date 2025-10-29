@@ -7,6 +7,7 @@ const btnAdd = document.getElementById("btn-add");
 const rodape = document.querySelector(".rodape");
 const divisoria = document.querySelector(".task-divisoria");
 const detalhes = document.querySelector(".task-detalhes");
+const taskPrompt = document.querySelector(".task-prompt");
 
 function TrocarDarkMode() {
     botaoDarkMode.style.display = "none";
@@ -18,6 +19,7 @@ function TrocarDarkMode() {
     rodape.classList.add("rodape-dark-mode");
     divisoria.classList.add("task-divisoria-dark-mode");
     detalhes.classList.add("task-detalhes-dark-mode");
+    taskPrompt.classList.add("task-prompt-dark-mode");
 }
 
 function TrocarLightMode() {
@@ -30,6 +32,7 @@ function TrocarLightMode() {
     rodape.classList.remove("rodape-dark-mode");
     divisoria.classList.remove("task-divisoria-dark-mode");
     detalhes.classList.remove("task-detalhes-dark-mode");
+    taskPrompt.classList.remove("task-prompt-dark-mode");
 }
 
 function escreverTask() {
