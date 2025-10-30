@@ -41,7 +41,6 @@ function escreverTask() {
     titulo.style.opacity = "100%";
     detalhes.style.display = "block";
     divisoria.style.display = "block";
-    return
 }
 
 function escreverDetalhes() {
@@ -53,6 +52,7 @@ function fecharTask() {
     task.style.opacity = "60%";
     detalhes.style.display = "none";
     divisoria.style.display = "none";
+    console.log("aqui");
 }
 
 document.addEventListener("click", (e) => {
@@ -69,3 +69,7 @@ document.addEventListener("click", (e) => {
         }
     }
 });
+
+function adicionarTask(e) {
+    e.stopPropagation();
+}
