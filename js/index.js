@@ -39,8 +39,33 @@ function escreverTask() {
     const titulo = document.querySelector(".task-titulo");
     titulo.textContent = "";
     titulo.style.opacity = "100%";
-    const taskDetalhes = document.querySelector(".task-detalhes");
-    const taskDivisoria = document.querySelector(".task-divisoria");
-    taskDetalhes.style.display = "block";
-    taskDivisoria.style.display = "block";
+    detalhes.style.display = "block";
+    divisoria.style.display = "block";
+    return
 }
+
+function escreverDetalhes() {
+    detalhes.textContent = "";
+    detalhes.style.opacity = "70%";
+}
+
+function fecharTask() { 
+    task.style.opacity = "60%";
+    detalhes.style.display = "none";
+    divisoria.style.display = "none";
+}
+
+document.addEventListener("click", (e) => {
+    if (task.contains(e.target) || detalhes.contains(e.target)) {
+        return
+    } else {
+        fecharTask();
+        detalhes.textContent = "Digite os detalhes";
+        detalhes.style.opacity = "60%";
+        if (task.textContent.trim() === "") {
+            task.textContent = "Digite aqui a sua tarefa";
+        } else  {
+            task.style.opacity = "100%"
+        }
+    }
+});

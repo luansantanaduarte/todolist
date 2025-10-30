@@ -109,7 +109,8 @@ span.btn-dark-mode {
   display: none;
 }
 
-.task-titulo:focus {
+.task-titulo:focus,
+.task-detalhes:focus {
   outline: none;
 }
 
